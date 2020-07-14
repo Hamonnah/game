@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 public class CheckersRunner extends Application {
 
-    private static Stage primaryStage = new Stage();
+    private static Stage primaryStage;
     private CheckersBoard checkersBoard= new CheckersBoard();
 
     @Override
@@ -18,6 +18,10 @@ public class CheckersRunner extends Application {
         primaryStage.setTitle("Checkers Game");
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 
 }

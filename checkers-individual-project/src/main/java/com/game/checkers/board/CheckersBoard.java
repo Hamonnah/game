@@ -6,8 +6,12 @@ import javafx.scene.layout.*;
 
 public class CheckersBoard {
 
-    BorderPane borderPane = new BorderPane();
+    private BorderPane borderPane = new BorderPane();
     private final Image imageBoard = new Image(Resources.getPath("board.jpg"));
+
+    public CheckersBoard() {
+        borderPane.setBackground(createBoardBackground());
+    }
 
     public BorderPane getBorderPane() {
         return borderPane;
@@ -19,6 +23,5 @@ public class CheckersBoard {
         Background background = new Background(backgroundImage);
         return background;
     }
-
 
 }
