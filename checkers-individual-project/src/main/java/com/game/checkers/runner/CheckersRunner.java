@@ -1,6 +1,6 @@
 package com.game.checkers.runner;
 
-import checkers.Board.CheckersBoard;
+import com.game.checkers.board.CheckersBoard;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
